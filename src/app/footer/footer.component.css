@@ -1,0 +1,23 @@
+footer{
+  background-color: black;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.fas,.fa-heart{
+  color: red;
+}
