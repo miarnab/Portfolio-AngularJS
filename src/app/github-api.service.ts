@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class GithubApiService {
   profileLink="https://api.github.com/users/miarnab";
   repoLink="https://api.github.com/users/miarnab/repos";
+  subscribe: any;
 
   constructor(private http:HttpClient) { }
 

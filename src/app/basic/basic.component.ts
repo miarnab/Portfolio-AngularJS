@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { GithubApiService } from '../github-api.service';
 
 @Component({
@@ -9,10 +10,10 @@ import { GithubApiService } from '../github-api.service';
 export class BasicComponent implements OnInit {
   profile: any;
 
-  constructor(private githubapiservice:GithubApiService) { }
+  constructor(private githubapiservice:GithubApiService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.profile=this.githubapiservice.getProfile();
+    this.route.params.get
   }
 
 }
